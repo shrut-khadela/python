@@ -21,4 +21,3 @@ def login(request:OAuth2PasswordRequestForm = Depends(), db:Session = Depends(da
     return schema.Token(access_token=access_token, token_type="bearer")
 
 
-print("Authenticate Router Loaded")
